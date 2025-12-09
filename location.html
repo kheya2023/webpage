@@ -5,9 +5,26 @@
   <title>People</title>
 
   <style>
+    body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('P1100619.JPG');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.1;   /* makes it pale */
+  pointer-events: none; /* allows clicking through */
+  z-index: -1;     /* behind content */
+}
+
+    
     body {
       font-family: Arial, sans-serif;
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
       line-height: 1.6;
     }
@@ -19,7 +36,7 @@
 
     .container {
       display: flex;
-      gap: 40px; /* space between list and image */
+      gap: 10px; /* space between list and image */
       align-items: flex-start;
     }
 
@@ -44,16 +61,30 @@
 
 <body>
 
-  <h1>Location</h1>
+  
 
   <div class="container">
 
-   We are part of the PIV department of CINaM, located in Luminy
+    <ul>
+      <h1>Affiliations</h1>
+We are part of the Physics and Engineering for Living Systems department of the Centre Interdisciplinaire de Nanosciences de Marseille <a href="https://www.cinam.univ-mrs.fr/cinam/en/team/physique-et-nano-micro-ingenierie-pour-le-vivant/#undefined" target="_blank"> (PIV/CINAM)</a> , located at the Luminy campus in Marseille, France.
+We also belong to the Turing Centre for Living Systems (<a href="https://centuri-livingsystems.org/" target="_blank"> CENTURI), an interdisciplinary centre aimed at developing an integrated scientific community to decipher the complexity of biological systems through the understanding of how biological function emerges from the organisation and dynamics of living systems.
+    </ul>
 
-    <div class="people-image">
-      <img src="people_photo.jpg" alt="Group photo">
+    <div class="list2">
+ <h1>Location & Contact</h1>
+
+Téléphone : +33(0)6 62 92 28 52
+Mail : cinam-contact@univ-amu.fr
+
+CINaM - UMR 7325
+CNRS - Aix Marseille Université
+Campus de Luminy – Case 913
+13288 MARSEILLE Cedex 09
     </div>
+     <ul>
 
+     </ul>
   </div>
 
 </body>
