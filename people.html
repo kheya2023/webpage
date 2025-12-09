@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
       line-height: 1.6;
     }
@@ -45,6 +45,22 @@
 <body>
 
   <h1>People & Alumni</h1>
+  body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('0daaf9d1-8649-4125-8265-834d72254d69.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.1;   /* makes it pale */
+  pointer-events: none; /* allows clicking through */
+  z-index: -1;     /* behind content */
+}
+
 
   <div class="container">
 
@@ -53,9 +69,19 @@
       <li>Nicolas Miani (PhD)</li>
       <li>Gaurav Varma (PhD)</li>
       <li>Clara Bayol (Engg.)</li>
-      Alumni
-      PhDs
-     
+     Alumni PDs
+      <li>Beatriz Bello (PD, Mexico)</li>
+      <li>Zakaria Marmri (R&D)</li>
+      <li>Arnaud Hemmerle (synchrotron SOLEIL)</li>
+      <li>Arif Kamal (PD, Sweden)</li>
+      <li>Astrid Wahl (Sci Admin)</li>
+      <li>Fuwei Pi (PI, China)</li>
+    </ul>
+
+    <div class="list2">
+
+    </div>
+ Alumni PhDs
     <li>Remy Torro (R&D, France)</li>
     <li>Ahmed Sharaf (PD, Paris) </li>
     <li>Mariem Soussi (R&D, France)</li>
@@ -64,21 +90,9 @@
     <li>Emmanuelle Benard (R&D)</li>     
       <li>Celine Dinnet (Prof, France)</li>
       <li>Pierre Dillard (R&D)</li>
+      <li>Sophie Massoue (R&D)</li>
       <li>Susanne Fenz (PI, Germany)</li>
       <li>Cornelia Monzel (PI, Germany)</li>
-      PDs
-       <li>Astrid Wahl (Sci Admin)</li>
-        <li>Zakaria Marmri (R&D)</li>
-       <li>Beatriz Bello (PD, Mexico)</li>
-      <li>Fuwei Pi (PI, China)</li>
-      <li>Arif Kamal (PD, Sweden)</li>
-      <li>Arnaud Hemmerle (synchrotron SOLEIL)</li>
-    </ul>
-
-    <div class="people-image">
-      <img src="0daaf9d1-8649-4125-8265-834d72254d69.png" alt="" margin-top: 10px>
-    </div>
-
   </div>
 
 </body>
