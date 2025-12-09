@@ -21,26 +21,10 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>People</title>
+  <title>findus</title>
 
   <style>
-    body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('none.JPG');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  opacity: 0.1;   /* makes it pale */
-  pointer-events: none; /* allows clicking through */
-  z-index: -1;     /* behind content */
-}
-
-    
+    /* Page layout */
     body {
       font-family: Arial, sans-serif;
       max-width: 1000px;
@@ -53,6 +37,51 @@
       margin-bottom: 30px;
     }
 
+    /* Main 2:1 layout */
+    .container {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    /* Left column (2 parts) */
+    .left-box {
+      flex: 2;
+      padding: 15px;
+      border: 1px solid #ccc;
+      background: white;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      text-align: justify;
+    }
+
+    /* Right column (1 part) */
+    .right-box {
+      flex: 1;
+      padding: 15px;
+      border: 1px solid #ccc;
+      background: white;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    /* Image inside right column */
+    .right-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    /* Tidy list */
+    .left-box ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
     .container {
       display: flex;
       gap: 10px; /* space between list and image */
@@ -87,14 +116,11 @@
 <body>
 
   
-
-  <div class="container">
-
-    <ul>
+  <div class="container"> 
       <h1>Affiliations</h1>
 We are part of the Physics and Engineering for Living Systems department of the Centre Interdisciplinaire de Nanosciences de Marseille <a href="https://www.cinam.univ-mrs.fr/cinam/en/team/physique-et-nano-micro-ingenierie-pour-le-vivant/#undefined" target="_blank"> (PIV/CINAM)</a> , located at the Luminy campus in Marseille, France.
 We also belong to the Turing Centre for Living Systems (<a href="https://centuri-livingsystems.org/" target="_blank"> CENTURI</a>), an interdisciplinary centre aimed at developing an integrated scientific community to decipher the complexity of biological systems through the understanding of how biological function emerges from the organisation and dynamics of living systems.
-    </ul>
+
 
     <div class="container">
        <ul>
@@ -102,7 +128,6 @@ We also belong to the Turing Centre for Living Systems (<a href="https://centuri
 
 Téléphone : +33(0)6 62 92 28 52
 Mail : cinam-contact@univ-amu.fr
-
 CINaM - UMR 7325
 CNRS - Aix Marseille Université
 Campus de Luminy – Case 913
@@ -111,9 +136,9 @@ Campus de Luminy – Case 913
       <div style="text-align: center;">
 <img src="P1100619.png" 
      alt="" 
-     width="600" 
+     width="300" 
      style="display: block; margin: 0px auto;"></div>
-    </div>
+   
      <ul>
 
      </ul>
