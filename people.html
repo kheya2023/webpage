@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
+      max-width: 900px;
       margin: 40px auto;
       line-height: 1.6;
     }
@@ -17,9 +17,27 @@
       margin-bottom: 30px;
     }
 
+    .container {
+      display: flex;
+      gap: 40px; /* space between list and image */
+      align-items: flex-start;
+    }
+
     ul {
       list-style-type: disc;
       padding-left: 20px;
+      flex: 1;
+    }
+
+    .people-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .people-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
     }
   </style>
 </head>
@@ -27,7 +45,9 @@
 <body>
 
   <h1>People</h1>
-    <h2>People</h2>
+
+  <div class="container">
+
     <ul>
       <li> <a href="https://kheya2023.github.io/webpage/first.html" target="_blank"> Kheya Sengupta </a> (PI) </li>
       <li>Nicolas Miani (PhD)</li>
@@ -51,6 +71,12 @@
       <li>Cornelia Monzel (PI, Germany)</li>
       <li>Arnaud Hemmerle (synchrotron SOLEIL)</li>
     </ul>
+
+    <div class="people-image">
+      <img src="0daaf9d1-8649-4125-8265-834d72254d69.png" alt="">
+    </div>
+
+  </div>
 
 </body>
 </html>
