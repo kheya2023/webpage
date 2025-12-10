@@ -38,12 +38,17 @@
     .container {
       display: flex;
       gap: 10px;
+       width: 100%;     /* important */
+      box-sizing: border-box;
       align-items: flex-start;
     }
-
+.left-box, .right-box {
+  box-sizing: border-box;
+}
     /* Left column (2 parts) */
     .left-box {
       flex: 1;
+      min-width: 0;
       padding: 15px;
       border: 1px solid #ccc;
       overflow: hidden;     /* hides overflow */
@@ -54,18 +59,18 @@
 
     .right-box {
   flex: 1;
+  min-width: 0;
   padding: 15px;
   overflow: hidden;     /* hides overflow */
   background: #f7e8c2;
   text-align: left;
 }
-
 .right-box img {
   width: 100%;
   height: auto;
 }
 
-.right-box img {
+.left-box img {
   width: 100%;
   height: auto;
 }
